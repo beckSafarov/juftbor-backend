@@ -19,8 +19,13 @@ class Report(Base):
     category = Column(String(50), nullable=False)  # e.g., 'scam', 'harassment', 'fake_profile'
     description = Column(Text)
     status = Column(
-        ENUM(ActivityStatusEnum, name="activity_status_enum"),
-        default="p"  # a: active, p: pending, d: dismissed
+        ENUM(
+            ActivityStatusEnum,
+            name="activity_status_enum",
+            values_callable=lambda x: [e.value for e in x],
+            create_constraint=False,
+        ),
+        default="p",  # a: active, p: pending, d: dismissed
     )
     admin_notes = Column(Text)
     created_at = Column(TIMESTAMP(timezone=True), server_default=func.now())

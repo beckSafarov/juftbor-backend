@@ -16,7 +16,16 @@ class Preferences(Base):
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), primary_key=True)
     age_range = Column(INT4RANGE, default="[18, 60]")
     height_range = Column(INT4RANGE, default="[140, 200]")
-    marital_status = Column(ARRAY(ENUM(MaritalStatusEnum, name="marital_status_enum")))
+    marital_status = Column(
+        ARRAY(
+            ENUM(
+                MaritalStatusEnum,
+                name="marital_status_enum",
+                values_callable=lambda x: [e.value for e in x],
+                create_constraint=False,
+            )
+        )
+    )
     preferred_towns = Column(ARRAY(Text))
     preferred_languages = Column(ARRAY(Text))
     occupation_blacklist = Column(ARRAY(Text))

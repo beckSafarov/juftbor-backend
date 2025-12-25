@@ -25,49 +25,74 @@ class User(Base):
     # Personal Information
     full_name = Column(String(255), nullable=False)
     birthdate = Column(Date, nullable=False)
-    gender = Column(ENUM(GenderEnum, name="gender_enum"), nullable=False)
-    marital_status = Column(ENUM(MaritalStatusEnum, name="marital_status_enum"))
+    gender = Column(
+        ENUM(
+            GenderEnum,
+            name="gender_enum",
+            values_callable=lambda x: [e.value for e in x],
+        ),
+        nullable=False,
+    )
+    marital_status = Column(
+        ENUM(
+            MaritalStatusEnum,
+            name="marital_status_enum",
+            values_callable=lambda x: [e.value for e in x],
+        )
+    )
     native_town = Column(Text)
     hometown = Column(Text)
     languages = Column(ARRAY(Text))
-    
+
     # Physical Attributes
     height = Column(Integer)  # in cm
     weight = Column(Integer)  # in kg
     biography = Column(Text)
-    
+
     # Professional/Education
     degree = Column(Integer)  # 0-3: no degree, bachelor, master, doctorate
     field_of_study = Column(Text)
     occupation = Column(Text)
-    
+
     # Lifestyle
     religious_level = Column(Integer)  # 0-3: not religious to very religious
     drinks = Column(String(1))  # 'n': never, 's': socially, 'y': yes
     smokes = Column(String(1))  # 'n': never, 's': socially, 'y': yes
-    
+
     # Timestamps
     created_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
-    
+
     # Contact Information
     reg_phone = Column(String(15), unique=True, nullable=False)  # Registration phone
-    contact_person = Column(ENUM(ContactPersonEnum, name="contact_person_enum"))
+    contact_person = Column(
+        ENUM(
+            ContactPersonEnum,
+            name="contact_person_enum",
+            values_callable=lambda x: [e.value for e in x],
+        )
+    )
     contact_phone = Column(String(15))  # Contact phone (may differ from reg_phone)
     telegram_id = Column(BIGINT, unique=True)  # Immutable Telegram user ID
     telegram_username = Column(Text)  # Display only, can change
     contact_comment = Column(Text)
-    
+
     # Status
     is_active = Column(
-        ENUM(ActivityStatusEnum, name="activity_status_enum"), 
-        server_default="a"
+        ENUM(
+            ActivityStatusEnum,
+            name="activity_status_enum",
+            values_callable=lambda x: [e.value for e in x],
+        ),
+        server_default="a",
     )
-    
+
     # Relationships
-    metadata = relationship("Metadata", back_populates="user", uselist=False, cascade="all, delete-orphan")
+    user_metadata = relationship(
+        "Metadata", back_populates="user", uselist=False, cascade="all, delete-orphan"
+    )
     preferences = relationship("Preferences", back_populates="user", uselist=False, cascade="all, delete-orphan")
     photos = relationship("Photo", back_populates="user", cascade="all, delete-orphan")
-    
+
     # Interests sent and received
     interests_sent = relationship(
         "Interest", 
@@ -81,7 +106,7 @@ class User(Base):
         back_populates="receiver",
         cascade="all, delete-orphan"
     )
-    
+
     # Reports
     reports_made = relationship(
         "Report",
@@ -94,7 +119,7 @@ class User(Base):
         back_populates="reported_user",
         cascade="all, delete-orphan"
     )
-    
+
     # Table Constraints
     __table_args__ = (
         # At least one contact method required
@@ -138,10 +163,10 @@ class User(Base):
             name="check_birthdate_valid"
         ),
     )
-    
+
     def __repr__(self):
         return f"<User(id={self.id}, name='{self.full_name}', gender={self.gender})>"
-    
+
     @property
     def age(self):
         """Calculate age from birthdate"""

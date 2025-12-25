@@ -24,7 +24,7 @@ class Metadata(Base):
     ban_date = Column(TIMESTAMP(timezone=True))
 
     # Relationship
-    user = relationship("User", back_populates="metadata")
+    user = relationship("User", back_populates="user_metadata")
 
     def __repr__(self):
         return f"<Metadata(user_id={self.user_id}, bot_activated={self.bot_activated}, is_banned={self.is_banned})>"
