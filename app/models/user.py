@@ -58,6 +58,9 @@ class User(Base):
     religious_level = Column(Integer)  # 0-3: not religious to very religious
     drinks = Column(String(1))  # 'n': never, 's': socially, 'y': yes
     smokes = Column(String(1))  # 'n': never, 's': socially, 'y': yes
+    number_of_children = Column(Integer)  # For divorced/widowed users
+    drinks_preference = Column(String(1))  # What they prefer in partner
+    smokes_preference = Column(String(1))  # What they prefer in partner
 
     # Timestamps
     created_at = Column(TIMESTAMP(timezone=True), server_default=func.now())
@@ -125,42 +128,54 @@ class User(Base):
         # At least one contact method required
         CheckConstraint(
             "(contact_phone IS NOT NULL) OR (telegram_id IS NOT NULL)",
-            name="check_contact_info_exists"
+            name="check_contact_info_exists",
         ),
         # Validate drinks value
         CheckConstraint(
-            "drinks IN ('n', 's', 'y') OR drinks IS NULL",
-            name="check_drinks_value"
+            "drinks IN ('n', 's', 'y') OR drinks IS NULL", name="check_drinks_value"
         ),
         # Validate smokes value
         CheckConstraint(
-            "smokes IN ('n', 's', 'y') OR smokes IS NULL",
-            name="check_smokes_value"
+            "smokes IN ('n', 's', 'y') OR smokes IS NULL", name="check_smokes_value"
         ),
         # Validate degree range
         CheckConstraint(
-            "(degree BETWEEN 0 AND 3) OR degree IS NULL",
-            name="check_degree_range"
+            "(degree BETWEEN 0 AND 3) OR degree IS NULL", name="check_degree_range"
         ),
         # Validate religious level range
         CheckConstraint(
             "(religious_level BETWEEN 0 AND 3) OR religious_level IS NULL",
-            name="check_religious_level_range"
+            name="check_religious_level_range",
         ),
         # Validate height
         CheckConstraint(
             "(height BETWEEN 100 AND 250) OR height IS NULL",
-            name="check_height_reasonable"
+            name="check_height_reasonable",
         ),
         # Validate weight
         CheckConstraint(
             "(weight BETWEEN 30 AND 300) OR weight IS NULL",
-            name="check_weight_reasonable"
+            name="check_weight_reasonable",
+        ),
+        # Validate number of children
+        CheckConstraint(
+            "number_of_children IS NULL OR number_of_children >= 0",
+            name="check_number_of_children_valid",
+        ),
+        # Validate drinks preference
+        CheckConstraint(
+            "drinks_preference IN ('n', 's', 'y') OR drinks_preference IS NULL",
+            name="check_drinks_preference_value",
+        ),
+        # Validate smokes preference
+        CheckConstraint(
+            "smokes_preference IN ('n', 's', 'y') OR smokes_preference IS NULL",
+            name="check_smokes_preference_value",
         ),
         # Validate birthdate (18+ years old, not before 1940)
         CheckConstraint(
             "birthdate >= '1940-01-01' AND birthdate <= CURRENT_DATE - INTERVAL '18 years'",
-            name="check_birthdate_valid"
+            name="check_birthdate_valid",
         ),
     )
 

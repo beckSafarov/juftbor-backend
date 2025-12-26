@@ -33,6 +33,9 @@ CREATE TABLE "users" (
   "religious_level" SMALLINT DEFAULT NULL, -- 0-3 (0: not religious, 3: very religious)
   "drinks" CHAR(1) DEFAULT NULL, -- 'n': never, 's': socially, 'y': yes
   "smokes" CHAR(1) DEFAULT NULL, -- 'n': never, 's': socially, 'y': yes
+  "number_of_children" INT DEFAULT NULL, -- For divorced/widowed users
+  "drinks_preference" CHAR(1) DEFAULT NULL, -- What they prefer in a partner: 'n': never, 's': socially, 'y': yes
+  "smokes_preference" CHAR(1) DEFAULT NULL, -- What they prefer in a partner: 'n': never, 's': socially, 'y': yes
   "created_at" TIMESTAMPTZ DEFAULT NOW(),
   "reg_phone" VARCHAR(15) UNIQUE NOT NULL,
   "contact_person" contact_person_enum,
@@ -84,9 +87,9 @@ CREATE TABLE "preferences" (
   "marital_status" marital_status_enum[] DEFAULT NULL, -- Users can pick multiple (e.g., S and D)
   "preferred_towns" TEXT[] DEFAULT NULL, -- Array of cities/regions
   "preferred_languages" TEXT[] DEFAULT NULL,
+  "preferred_degree" SMALLINT[] DEFAULT NULL, -- Array of degrees (0-3)
   "occupation_blacklist" TEXT[] DEFAULT NULL, -- Array of occupations to avoid
   "religious_level" SMALLINT[] DEFAULT NULL, -- Array of levels (0-3)
-  "preferred_degree" SMALLINT[] DEFAULT NULL, -- Array of degrees (0-3)
   "updated_at" TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -153,6 +156,18 @@ CHECK (height IS NULL OR (height BETWEEN 100 AND 250));
 ALTER TABLE "users"
 ADD CONSTRAINT check_weight_reasonable 
 CHECK (weight IS NULL OR (weight BETWEEN 30 AND 300));
+
+ALTER TABLE "users"
+ADD CONSTRAINT check_number_of_children_valid 
+CHECK (number_of_children IS NULL OR number_of_children >= 0);
+
+ALTER TABLE "users"
+ADD CONSTRAINT check_drinks_preference_value 
+CHECK (drinks_preference IN ('n', 's', 'y') OR drinks_preference IS NULL);
+
+ALTER TABLE "users"
+ADD CONSTRAINT check_smokes_preference_value 
+CHECK (smokes_preference IN ('n', 's', 'y') OR smokes_preference IS NULL);
 
 -- Ensure birthdate is reasonable (18+ years old, not before 1940)
 ALTER TABLE "users"
