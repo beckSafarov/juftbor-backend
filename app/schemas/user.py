@@ -5,9 +5,7 @@ Used for request/response validation in FastAPI endpoints.
 from pydantic import BaseModel, Field, validator
 from typing import Optional, List
 from datetime import date
-from app.models.enums import (
-    GenderEnum, MaritalStatusEnum, ContactPersonEnum, ActivityStatusEnum
-)
+from app.models.enums import GenderEnum, MaritalStatusEnum, ActivityStatusEnum
 
 
 class UserCreate(BaseModel):
@@ -43,7 +41,7 @@ class UserCreate(BaseModel):
     smokes_preference: Optional[str] = Field(None, pattern="^[nsy]$")
 
     # Contact Information
-    contact_person: Optional[ContactPersonEnum] = None
+    contact_person: Optional[str] = None
     contact_phone: Optional[str] = Field(None, min_length=10, max_length=15)
     telegram_id: Optional[int] = None
     telegram_username: Optional[str] = None
@@ -127,7 +125,7 @@ class UserUpdate(BaseModel):
     number_of_children: Optional[int] = Field(None, ge=0)
     drinks_preference: Optional[str] = Field(None, pattern="^[nsy]$")
     smokes_preference: Optional[str] = Field(None, pattern="^[nsy]$")
-    contact_person: Optional[ContactPersonEnum] = None
+    contact_person: Optional[str] = None
     contact_phone: Optional[str] = Field(None, min_length=10, max_length=15)
     telegram_username: Optional[str] = None
     contact_comment: Optional[str] = None

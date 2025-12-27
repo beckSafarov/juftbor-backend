@@ -67,13 +67,14 @@ class User(Base):
 
     # Contact Information
     reg_phone = Column(String(15), unique=True, nullable=False)  # Registration phone
-    contact_person = Column(
-        ENUM(
-            ContactPersonEnum,
-            name="contact_person_enum",
-            values_callable=lambda x: [e.value for e in x],
-        )
-    )
+    contact_person = Column(Text)
+    # contact_person = Column(
+    #     ENUM(
+    #         ContactPersonEnum,
+    #         name="contact_person_enum",
+    #         values_callable=lambda x: [e.value for e in x],
+    #     )
+    # )
     contact_phone = Column(String(15))  # Contact phone (may differ from reg_phone)
     telegram_id = Column(BIGINT, unique=True)  # Immutable Telegram user ID
     telegram_username = Column(Text)  # Display only, can change

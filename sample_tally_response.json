@@ -1,0 +1,800 @@
+{
+  "eventId": "d9d2e3b5-82a9-4184-9427-c051ced486a3",
+  "eventType": "FORM_RESPONSE",
+  "createdAt": "2025-12-27T06:43:27.130Z",
+  "data": {
+    "responseId": "b5RzZ97",
+    "submissionId": "b5RzZ97",
+    "respondentId": "QKVVO6A",
+    "formId": "LZzqGj",
+    "formName": "Juftlik.UZ",
+    "createdAt": "2025-12-27T06:43:27.000Z",
+    "fields": [
+      {
+        "key": "question_R0MOYK",
+        "label": "Telefon raqamingiz:",
+        "type": "INPUT_PHONE_NUMBER",
+        "value": "+998957003023"
+      },
+      {
+        "key": "question_oyeJdb",
+        "label": "Ism va Familyangiz",
+        "type": "INPUT_TEXT",
+        "value": "Eshmat Toshmatov"
+      },
+      {
+        "key": "question_Gz9MDe",
+        "label": "Jinsingiz",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["6403d166-35b0-405d-b17c-c173e104339e"],
+        "options": [
+          {
+            "id": "6403d166-35b0-405d-b17c-c173e104339e",
+            "text": "Erkak"
+          },
+          {
+            "id": "47126feb-b81a-44e6-8a1b-14be45ed4154",
+            "text": "Ayol"
+          }
+        ]
+      },
+      {
+        "key": "question_Oz4RYa",
+        "label": "Tug'ilgan sanangiz",
+        "type": "INPUT_DATE",
+        "value": "1999-10-24"
+      },
+      {
+        "key": "question_V0QrYj",
+        "label": "Turmushdagi holatingiz",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["93f3ce52-782b-4c04-abc7-dc9c183fbb56"],
+        "options": [
+          {
+            "id": "93f3ce52-782b-4c04-abc7-dc9c183fbb56",
+            "text": "Hech qachon oila qurmagan"
+          },
+          {
+            "id": "03132d75-201a-4c2d-b9b8-9803f24d375d",
+            "text": "Ajrashgan"
+          },
+          {
+            "id": "07240243-109c-4225-85fe-de8903e242f6",
+            "text": "Beva"
+          },
+          {
+            "id": "c34b1bcc-00e2-48a3-b74b-fcb457222daa",
+            "text": "Boshqa"
+          }
+        ]
+      },
+      {
+        "key": "question_P61oY1",
+        "label": "Nechta Farzandingiz bor?",
+        "type": "INPUT_NUMBER",
+        "value": 0
+      },
+      {
+        "key": "question_EXdpDl",
+        "label": "Tug'ilgan shahringiz/viloyatingiz",
+        "type": "DROPDOWN",
+        "value": ["46c222b1-a466-49f5-b483-6d0921a19a4d"],
+        "options": [
+          {
+            "id": "7d2a04b8-3351-48bb-a49b-96de0dc7a829",
+            "text": "Toshkent shahar"
+          },
+          {
+            "id": "0a3ddcfd-1827-4be2-aba8-e075a7db17aa",
+            "text": "Toshkent viloyati"
+          },
+          {
+            "id": "18eb350e-09b3-47dc-a91e-c6ec0289b4a3",
+            "text": "Samarqand viloyati"
+          },
+          {
+            "id": "05bb1487-c51c-4a8d-aff3-463f2262931f",
+            "text": "Jizzax viloyati"
+          },
+          {
+            "id": "913b894c-55e1-48bb-b977-beadab6a7661",
+            "text": "Andijon viloyati"
+          },
+          {
+            "id": "7bfaeac8-9e3e-4b54-955d-a70121290b63",
+            "text": "Farg'ona viloyati"
+          },
+          {
+            "id": "70f76179-49f7-4e2d-9b2d-70b744e3ce35",
+            "text": "Namangan viloyati"
+          },
+          {
+            "id": "d865fdcc-04ce-4b15-83c8-b7cd3dd9034e",
+            "text": "Sirdaryo viloyati"
+          },
+          {
+            "id": "c3249113-0c6f-49e5-b274-beb521933ddd",
+            "text": "Qashqadaryo viloyati"
+          },
+          {
+            "id": "d159c64a-45f3-4935-af15-d4cb71e55138",
+            "text": "Surxondaryo viloyati"
+          },
+          {
+            "id": "8ee5bdf7-68d7-40da-96b0-26ed40f24cca",
+            "text": "Navoiy viloyati"
+          },
+          {
+            "id": "46c222b1-a466-49f5-b483-6d0921a19a4d",
+            "text": "Buxoro viloyati "
+          },
+          {
+            "id": "83309d91-eb79-478d-8b4b-d9ef92b5dd34",
+            "text": "Qoraqalpog'iston Respublikasi"
+          },
+          {
+            "id": "7d35e877-3647-4e76-927b-665321e44f6b",
+            "text": "Xorazm viloyati"
+          }
+        ]
+      },
+      {
+        "key": "question_r6aXLo",
+        "label": "Hozirgi yashash manzilingiz",
+        "type": "DROPDOWN",
+        "value": ["3d8950b5-a379-47df-b585-9297d835cc08"],
+        "options": [
+          {
+            "id": "fb0d9e6a-c4c6-41f3-85bf-f95ba8fd4682",
+            "text": "Toshkent shahar"
+          },
+          {
+            "id": "6df76ed1-ed59-4c28-a89b-d07702f871af",
+            "text": "Toshkent viloyati"
+          },
+          {
+            "id": "0c57fc07-2758-42fa-81a8-6bedb9d90465",
+            "text": "Samarqand viloyati"
+          },
+          {
+            "id": "a4514ee5-b6ae-4419-873a-3f3b6e94ea04",
+            "text": "Jizzax viloyati"
+          },
+          {
+            "id": "7efd416f-45ab-424a-bcfd-56ed0d8fcd9d",
+            "text": "Andijon viloyati"
+          },
+          {
+            "id": "19a646cc-9e4f-46f5-8c65-5fe37d733cb1",
+            "text": "Farg'ona viloyati"
+          },
+          {
+            "id": "e5b9809d-d754-484c-b5a2-35731241a72e",
+            "text": "Namangan viloyati"
+          },
+          {
+            "id": "ba17bc6d-185e-45d1-8ab3-8786cdf90624",
+            "text": "Sirdaryo viloyati"
+          },
+          {
+            "id": "3d8950b5-a379-47df-b585-9297d835cc08",
+            "text": "Qashqadaryo viloyati"
+          },
+          {
+            "id": "e53a280e-02da-45e7-9ebd-acf55b6c1461",
+            "text": "Surxondaryo viloyati"
+          },
+          {
+            "id": "80013ae6-c73c-4e38-a9cf-e13953a7c7ce",
+            "text": "Navoiy viloyati"
+          },
+          {
+            "id": "96a2a4fa-2295-44a3-8559-c1b3bfcb4fd8",
+            "text": "Buxoro viloyati "
+          },
+          {
+            "id": "175f82be-8894-45eb-af3b-e7cb7fe6558e",
+            "text": "Qoraqalpog'iston Respublikasi"
+          },
+          {
+            "id": "a60277ae-5ca3-49fe-8529-bde66574c234",
+            "text": "Xorazm viloyati"
+          }
+        ]
+      },
+      {
+        "key": "question_48JZvr",
+        "label": "Qaysi tillarni bilasiz (bir yoki bir nechta)",
+        "type": "MULTI_SELECT",
+        "value": [
+          "31c47367-7702-4545-99ee-98a7911713bf",
+          "4de1597d-2762-4223-aec2-3d479e2e7edf"
+        ],
+        "options": [
+          {
+            "id": "4de1597d-2762-4223-aec2-3d479e2e7edf",
+            "text": "O'zbek"
+          },
+          {
+            "id": "31c47367-7702-4545-99ee-98a7911713bf",
+            "text": "Tojik"
+          },
+          {
+            "id": "5b523bee-80d0-4be8-89ae-913c9586275f",
+            "text": "Rus"
+          },
+          {
+            "id": "e1c454d4-5cc2-45d9-b638-32b48fd41462",
+            "text": "Ingliz"
+          },
+          {
+            "id": "53dd750f-fd8b-4ebc-b98b-0da1313e9810",
+            "text": "Qozoq"
+          },
+          {
+            "id": "5e9fa463-7170-432f-bfc3-2982704989a6",
+            "text": "Turk"
+          },
+          {
+            "id": "217788f7-9ff1-4141-a708-f01a1a59b13b",
+            "text": "Arab"
+          },
+          {
+            "id": "d6549d9f-93ba-4214-8869-3c4761c7fe1e",
+            "text": "boshqa"
+          }
+        ]
+      },
+      {
+        "key": "question_jy6KWQ",
+        "label": "Bo'yingiz (sm)",
+        "type": "INPUT_NUMBER",
+        "value": 187
+      },
+      {
+        "key": "question_2ea2ve",
+        "label": "Vazningiz (kg)",
+        "type": "INPUT_NUMBER",
+        "value": 89
+      },
+      {
+        "key": "question_xpMGyd",
+        "label": "O'zingiz haqingizda gapirib bering:",
+        "type": "TEXTAREA",
+        "value": "ewf ewf ew"
+      },
+      {
+        "key": "question_Oz4R9p",
+        "label": "Rasm yuklang",
+        "type": "FILE_UPLOAD",
+        "value": null
+      },
+      {
+        "key": "question_ZNExYV",
+        "label": "Ma'lumotingiz",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["16588022-d4fa-4b98-b7bb-555934be90d2"],
+        "options": [
+          {
+            "id": "c5c9d3ff-2d54-4f52-8426-25cc7bb440c3",
+            "text": "Litsey/ Kollej / Maktab"
+          },
+          {
+            "id": "16588022-d4fa-4b98-b7bb-555934be90d2",
+            "text": "Bakalavr"
+          },
+          {
+            "id": "58a056b9-1017-40b9-a73d-91c7236b6f1d",
+            "text": "Magistratura"
+          },
+          {
+            "id": "14f0dc5d-290b-4b81-b26e-d997fee27b1b",
+            "text": "Phd"
+          }
+        ]
+      },
+      {
+        "key": "question_N6lzY0",
+        "label": "O'qishdagi yo'nalishingiz",
+        "type": "DROPDOWN",
+        "value": ["847f32e0-10df-4e80-87ae-c00bf26a30a0"],
+        "options": [
+          {
+            "id": "967cf3e0-1b95-4265-b10d-c1d7ecc839e6",
+            "text": "Informatsion Texnologiyalar"
+          },
+          {
+            "id": "cf6d45aa-804c-4264-aff4-537e62312743",
+            "text": "Media va Jurnalistika"
+          },
+          {
+            "id": "847f32e0-10df-4e80-87ae-c00bf26a30a0",
+            "text": "Transport va Logistika"
+          },
+          {
+            "id": "a650df31-6ddd-4cbb-82b5-3357e14ee4ac",
+            "text": "Aloqa va Kommunikatsiya"
+          },
+          {
+            "id": "a563b670-7f34-4ef9-b712-da4ab792f17c",
+            "text": "Biznes va Menejment"
+          },
+          {
+            "id": "2175756c-1f1a-44a1-b94f-b527ef629322",
+            "text": "Moliya va Buxgalteriya"
+          },
+          {
+            "id": "85d623e2-a0d7-45e3-a0fc-9c5d62bb0ff1",
+            "text": "Boshqa gumanitar"
+          },
+          {
+            "id": "8f413ca2-a49c-4ee9-9eae-38f469b6c1f0",
+            "text": "Huquq va Qonun"
+          },
+          {
+            "id": "cef12dc4-f593-430b-a6f0-e4f1f4f7d948",
+            "text": "Psixologiya"
+          },
+          {
+            "id": "4a5e50ed-9e42-495f-9b75-e6faa55e478d",
+            "text": "Tibbiyot"
+          }
+        ]
+      },
+      {
+        "key": "question_qdDyWO",
+        "label": "Hozirgi kasbingiz",
+        "type": "DROPDOWN",
+        "value": ["d8f32c7b-360a-40a5-b1d4-74b9c11b1640"],
+        "options": [
+          {
+            "id": "89a32786-afe0-48ae-8cd6-bd3e2585a5ea",
+            "text": "Dasturchi"
+          },
+          {
+            "id": "25100bf6-5bd5-4846-ab16-74883d52b94c",
+            "text": "Logistikachi"
+          },
+          {
+            "id": "523e572c-eaf8-487a-92bd-ad47f22a12fb",
+            "text": "Operator"
+          },
+          {
+            "id": "f09bc654-314b-4912-9ba4-dfd35c993ac3",
+            "text": "Sotuvchi"
+          },
+          {
+            "id": "cf61b931-9a19-46e5-9dcc-f9bc8545d19e",
+            "text": "Analitik"
+          },
+          {
+            "id": "340aacc0-5465-4b89-8890-318c1a4a56ce",
+            "text": "Tadbirkor"
+          },
+          {
+            "id": "0726e7be-0159-45f2-a294-ef2b1b1135aa",
+            "text": "Menejer"
+          },
+          {
+            "id": "23ea378b-94f3-49d8-9655-174f5c8b6f1b",
+            "text": "Buxgalter"
+          },
+          {
+            "id": "d8f32c7b-360a-40a5-b1d4-74b9c11b1640",
+            "text": "Boshqa"
+          },
+          {
+            "id": "5e1fff73-9e53-4f5e-988c-131df4e4a2cf",
+            "text": "Talaba"
+          }
+        ]
+      },
+      {
+        "key": "question_QDeGYY",
+        "label": "Ish joyingiz",
+        "type": "INPUT_TEXT",
+        "value": "boshqa"
+      },
+      {
+        "key": "question_9W9evE",
+        "label": "E'tiqod darajangizni belgilang:",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["4adb2ffb-e5a6-4e88-8c25-d2f5339c3ff8"],
+        "options": [
+          {
+            "id": "44c79fb3-df10-494a-b5b4-5da1017daf0c",
+            "text": "Dindor emasman"
+          },
+          {
+            "id": "4adb2ffb-e5a6-4e88-8c25-d2f5339c3ff8",
+            "text": "Farz amallarni qisman bajaraman"
+          },
+          {
+            "id": "85d3e858-42e9-470f-9a98-6b42a067a163",
+            "text": "Farz amallarni to'liq bajaraman"
+          },
+          {
+            "id": "93f348ad-459e-4997-863c-91fa6f48d0a9",
+            "text": "Farz va qo'shimcha (sunnat/nafl) amallarni doimiy bajraman "
+          }
+        ]
+      },
+      {
+        "key": "question_e6Qb2x",
+        "label": "Zararli odatlar",
+        "type": "MATRIX",
+        "value": {
+          "290c55eb-8213-4454-a1d0-d31a23a47eb4": [
+            "0ff1179c-1a7a-415f-ad63-cf296da44507"
+          ],
+          "6a79c94a-815e-4041-bc56-db1ebe56146f": [
+            "2eb5838f-160a-4eea-8c4e-99d6f04ead12"
+          ]
+        },
+        "rows": [
+          {
+            "id": "290c55eb-8213-4454-a1d0-d31a23a47eb4",
+            "text": "Ichasizmi?"
+          },
+          {
+            "id": "6a79c94a-815e-4041-bc56-db1ebe56146f",
+            "text": "Chekasizmi?"
+          }
+        ],
+        "columns": [
+          {
+            "id": "0ff1179c-1a7a-415f-ad63-cf296da44507",
+            "text": "Yo'q"
+          },
+          {
+            "id": "2eb5838f-160a-4eea-8c4e-99d6f04ead12",
+            "text": "Ba'zida"
+          },
+          {
+            "id": "96ba35a5-a648-4d87-9ede-27c08369b5c0",
+            "text": "Ha"
+          }
+        ]
+      },
+      {
+        "key": "question_WNE4Ye",
+        "label": "Minimal yosh:",
+        "type": "INPUT_NUMBER",
+        "value": 18
+      },
+      {
+        "key": "question_a65WEZ",
+        "label": "Maksimal yosh:",
+        "type": "INPUT_NUMBER",
+        "value": 23
+      },
+      {
+        "key": "question_67jqvA",
+        "label": "Turmushdagi holati (hech qaysi, bir yoki bir nechta)",
+        "type": "CHECKBOXES",
+        "value": ["bcaa0c2a-605b-408b-b184-bf848ae77f73"],
+        "options": [
+          {
+            "id": "bcaa0c2a-605b-408b-b184-bf848ae77f73",
+            "text": "Hech qachon oila qurmagan"
+          },
+          {
+            "id": "3885b0a0-e2f3-453c-a38e-d135eab7c880",
+            "text": "Ajrashgan"
+          },
+          {
+            "id": "6a7092af-07ac-468c-a5e5-d029281535c3",
+            "text": "Beva"
+          },
+          {
+            "id": "95b6022c-7339-4cc7-a629-1bb67e66ec2c",
+            "text": "Boshqa"
+          }
+        ]
+      },
+      {
+        "key": "question_67jqvA_bcaa0c2a-605b-408b-b184-bf848ae77f73",
+        "label": "Turmushdagi holati (hech qaysi, bir yoki bir nechta) (Hech qachon oila qurmagan)",
+        "type": "CHECKBOXES",
+        "value": true
+      },
+      {
+        "key": "question_67jqvA_3885b0a0-e2f3-453c-a38e-d135eab7c880",
+        "label": "Turmushdagi holati (hech qaysi, bir yoki bir nechta) (Ajrashgan)",
+        "type": "CHECKBOXES",
+        "value": false
+      },
+      {
+        "key": "question_67jqvA_6a7092af-07ac-468c-a5e5-d029281535c3",
+        "label": "Turmushdagi holati (hech qaysi, bir yoki bir nechta) (Beva)",
+        "type": "CHECKBOXES",
+        "value": false
+      },
+      {
+        "key": "question_67jqvA_95b6022c-7339-4cc7-a629-1bb67e66ec2c",
+        "label": "Turmushdagi holati (hech qaysi, bir yoki bir nechta) (Boshqa)",
+        "type": "CHECKBOXES",
+        "value": false
+      },
+      {
+        "key": "question_7WLQva",
+        "label": "Minimal:",
+        "type": "INPUT_NUMBER",
+        "value": 160
+      },
+      {
+        "key": "question_b7jar6",
+        "label": "Maksimal:",
+        "type": "INPUT_NUMBER",
+        "value": 170
+      },
+      {
+        "key": "question_Ad2kDy",
+        "label": "Yashash manzili (bir yoki bir nechta)",
+        "type": "DROPDOWN",
+        "value": ["3c510ac6-aa03-42bf-9bbf-d9ef899bd7f6"],
+        "options": [
+          {
+            "id": "836c2b6c-ed8d-4d3d-9127-2d57df768fd9",
+            "text": "Toshkent shahar"
+          },
+          {
+            "id": "31deae08-afb5-45a0-8fe5-717ce0edc021",
+            "text": "Toshkent viloyati"
+          },
+          {
+            "id": "2f3f3e82-b332-4043-a468-4684d116f61f",
+            "text": "Samarqand viloyati"
+          },
+          {
+            "id": "2a85adef-1cbe-4b41-b0ac-b4eb740f6746",
+            "text": "Jizzax viloyati"
+          },
+          {
+            "id": "48c93d2a-2acd-42d7-8899-7ecad264b886",
+            "text": "Andijon viloyati"
+          },
+          {
+            "id": "48acf118-b847-43d1-836f-dbd009e36dac",
+            "text": "Farg'ona viloyati"
+          },
+          {
+            "id": "221d1a0b-4261-4040-9e76-1a207fe6df17",
+            "text": "Namangan viloyati"
+          },
+          {
+            "id": "0d725f7e-6380-4163-bc8c-c6917f060b95",
+            "text": "Sirdaryo viloyati"
+          },
+          {
+            "id": "3c510ac6-aa03-42bf-9bbf-d9ef899bd7f6",
+            "text": "Qashqadaryo viloyati"
+          },
+          {
+            "id": "3ea11363-a050-4ddd-9809-80f7a6dc2305",
+            "text": "Surxondaryo viloyati"
+          },
+          {
+            "id": "95f1c222-1f2d-42da-b010-53b44d84286e",
+            "text": "Navoiy viloyati"
+          },
+          {
+            "id": "d1d313c7-bc9d-4a8d-92ec-94d16f8519d4",
+            "text": "Buxoro viloyati "
+          },
+          {
+            "id": "f6b45697-4bd0-4cf5-909e-85c1bb6ad8c3",
+            "text": "Qoraqalpog'iston Respublikasi"
+          },
+          {
+            "id": "7ead6071-3fe7-489c-b856-cbfd006914e8",
+            "text": "Xorazm viloyati"
+          }
+        ]
+      },
+      {
+        "key": "question_BXdvDe",
+        "label": "Ma'lumoti bo'shi kerak (bir yoki bir nechta):",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["4acd4935-02c7-4b2a-80b8-58781ff2f6a8"],
+        "options": [
+          {
+            "id": "4acd4935-02c7-4b2a-80b8-58781ff2f6a8",
+            "text": "Litsey/ Kollej / Maktab"
+          },
+          {
+            "id": "caaa8b26-a98b-4838-82b0-913b718110f0",
+            "text": "Bakalavr"
+          },
+          {
+            "id": "9265c201-104e-4e1f-935f-f6164f99565a",
+            "text": "Magistratura"
+          },
+          {
+            "id": "13c11b9c-e0c3-405f-8415-d08294b45e71",
+            "text": "Phd"
+          }
+        ]
+      },
+      {
+        "key": "question_kyeLWr",
+        "label": "TO'G'RI KELMAYDIGAN kasblar (ixtiyoriy):",
+        "type": "DROPDOWN",
+        "value": ["72cded44-3fd1-4506-a997-18b7aae5079a"],
+        "options": [
+          {
+            "id": "21b17816-8472-41cd-a541-ff3df37f5fa4",
+            "text": "Dasturchi"
+          },
+          {
+            "id": "72cded44-3fd1-4506-a997-18b7aae5079a",
+            "text": "Logistikachi"
+          },
+          {
+            "id": "8be7f45f-5754-45f6-b83b-79c3770c1e2f",
+            "text": "Operator"
+          },
+          {
+            "id": "426f6f9e-286c-42f3-844b-6989cf36de50",
+            "text": "Sotuvchi"
+          },
+          {
+            "id": "934439af-6e0c-4bc2-bada-38340a447ce4",
+            "text": "Analitik"
+          },
+          {
+            "id": "e7a5de98-086a-4440-9995-77fae18ea892",
+            "text": "Tadbirkor"
+          },
+          {
+            "id": "dd32da01-45d6-462d-9021-f837bd6977de",
+            "text": "Menejer"
+          },
+          {
+            "id": "c9790d41-08aa-4a9b-b0d5-6b495b21eb21",
+            "text": "Buxgalter"
+          },
+          {
+            "id": "487b5ccd-ee20-4804-baad-9595bee55297",
+            "text": "Boshqa"
+          },
+          {
+            "id": "f3c249ec-7680-4514-9e41-248e673c1bff",
+            "text": "Talaba"
+          }
+        ]
+      },
+      {
+        "key": "question_vAeRLg",
+        "label": "E'tiqod darajasi (bir yoki bir nechta)",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["0f59dd2c-6a1e-42db-90bf-7e7928f8a133"],
+        "options": [
+          {
+            "id": "56f9eb2c-b688-4c79-885d-3bc958d5a528",
+            "text": "Dindor emas"
+          },
+          {
+            "id": "0f59dd2c-6a1e-42db-90bf-7e7928f8a133",
+            "text": "Farz amallarni qisman bajarishi kerak"
+          },
+          {
+            "id": "cbbfa680-0113-4a72-aaa6-39214c5cb2a0",
+            "text": "Farz amallarni to'liq bajarishi kerak"
+          },
+          {
+            "id": "1731ccd1-d2f2-4945-8d82-d5b12f5eb956",
+            "text": "Farz va qo'shimcha (sunnat/nafl) amallarni doimiy bajarishi kerak"
+          }
+        ]
+      },
+      {
+        "key": "question_K65XDg",
+        "label": "Zararli odatlar (bir yoki bir nechta)",
+        "type": "MATRIX",
+        "value": {
+          "d00ef8b5-e757-4f46-a557-0908ecb1c2e0": [
+            "a5fa56a2-9764-4b47-b395-7dccd0804e6c"
+          ],
+          "6bd5909c-c916-4bc6-8021-24dec6dad819": [
+            "a5fa56a2-9764-4b47-b395-7dccd0804e6c"
+          ]
+        },
+        "rows": [
+          {
+            "id": "d00ef8b5-e757-4f46-a557-0908ecb1c2e0",
+            "text": "Ichadi"
+          },
+          {
+            "id": "6bd5909c-c916-4bc6-8021-24dec6dad819",
+            "text": "Chekadi"
+          }
+        ],
+        "columns": [
+          {
+            "id": "a5fa56a2-9764-4b47-b395-7dccd0804e6c",
+            "text": "Yo'q"
+          },
+          {
+            "id": "e87b66de-2984-4398-9fe7-55fe5e67cd94",
+            "text": "Ba'zida"
+          },
+          {
+            "id": "311dcd34-1217-4e3c-bfab-b31509e5793e",
+            "text": "Ha"
+          }
+        ]
+      },
+      {
+        "key": "question_Lb78Yy",
+        "label": "Sizga qiziqish bildiradigan nomzod kim bilan bog'lanishi kerak?",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["Qo'shnim"],
+        "options": [
+          {
+            "id": "1dabb031-466e-4661-815c-37cf91cce53c",
+            "text": "O'zim"
+          },
+          {
+            "id": "fcda8d7e-4d31-4661-9cc2-2100f67c301b",
+            "text": "Otam"
+          },
+          {
+            "id": "5a137ecc-af53-4130-aee6-58808d417677",
+            "text": "Onam"
+          },
+          {
+            "id": "c9575973-6957-4da8-9ae1-7f69d5fdd032",
+            "text": "Akam"
+          },
+          {
+            "id": "Qo'shnim",
+            "text": "Qo'shnim",
+            "isOtherOption": true,
+            "optionId": "3320c5a4-cb04-4324-9743-8ce79c8d5d5b"
+          }
+        ]
+      },
+      {
+        "key": "question_pKygW1",
+        "label": null,
+        "type": "INPUT_TEXT",
+        "value": null
+      },
+      {
+        "key": "question_1ldjvg",
+        "label": "Nomzodlar uchun qaysi kontakt ma'lumotini bermoqchisiz?",
+        "type": "MULTIPLE_CHOICE",
+        "value": ["343d2c8f-a98f-4c6e-9001-e6762cd474c4"],
+        "options": [
+          {
+            "id": "343d2c8f-a98f-4c6e-9001-e6762cd474c4",
+            "text": "Telefon raqam"
+          },
+          {
+            "id": "a5159715-5bd7-4f23-af37-029a3a0959c2",
+            "text": "Telegram akkaunt"
+          }
+        ]
+      },
+      {
+        "key": "question_MbN0Yl",
+        "label": "Nomzodlar bog'lanishi uchun raqamingiz:",
+        "type": "INPUT_PHONE_NUMBER",
+        "value": "+998957003023"
+      },
+      {
+        "key": "question_J6pyDr",
+        "label": "Telegram akkauntingiz (nickname):",
+        "type": "INPUT_TEXT",
+        "value": null
+      },
+      {
+        "key": "question_g0dBZP",
+        "label": "Bog'lanmoqchi bo'lganlar uchun xabar qoldiring (ixtiyoriy)",
+        "type": "INPUT_TEXT",
+        "value": "telefon qiling"
+      }
+    ]
+  }
+}
