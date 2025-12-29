@@ -26,10 +26,10 @@ class UserCreate(BaseModel):
     height: Optional[int] = Field(None, ge=100, le=250)
     weight: Optional[int] = Field(None, ge=30, le=300)
     biography: Optional[str] = None
+    nationality: Optional[str] = None
 
     # Professional/Education
     degree: Optional[int] = Field(None, ge=0, le=3)
-    field_of_study: Optional[str] = None
     occupation: Optional[str] = None
 
     # Lifestyle
@@ -87,8 +87,8 @@ class UserResponse(BaseModel):
     height: Optional[int]
     weight: Optional[int]
     biography: Optional[str]
+    nationality: Optional[str]
     degree: Optional[int]
-    field_of_study: Optional[str]
     occupation: Optional[str]
     religious_level: Optional[int]
     drinks: Optional[str]
@@ -117,7 +117,7 @@ class UserUpdate(BaseModel):
     height: Optional[int] = Field(None, ge=100, le=250)
     weight: Optional[int] = Field(None, ge=30, le=300)
     biography: Optional[str] = None
-    field_of_study: Optional[str] = None
+    nationality: Optional[str] = None
     occupation: Optional[str] = None
     religious_level: Optional[int] = Field(None, ge=0, le=3)
     drinks: Optional[str] = Field(None, pattern="^[nsy]$")

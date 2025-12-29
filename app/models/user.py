@@ -48,10 +48,10 @@ class User(Base):
     height = Column(Integer)  # in cm
     weight = Column(Integer)  # in kg
     biography = Column(Text)
+    nationality = Column(Text)
 
     # Professional/Education
     degree = Column(Integer)  # 0-3: no degree, bachelor, master, doctorate
-    field_of_study = Column(Text)
     occupation = Column(Text)
 
     # Lifestyle

@@ -6,30 +6,29 @@ into the format expected by the User model.
 
 # Map Tally question keys to database field names
 FIELD_MAPPING = {
-    "question_R0MOYK": "reg_phone",           # Telefon raqamingiz
-    "question_oyeJdb": "full_name",           # Ism va Familyangiz
-    "question_Gz9MDe": "gender",              # Jinsingiz
-    "question_Oz4RYa": "birthdate",           # Tug'ilgan sanangiz
-    "question_V0QrYj": "marital_status",      # Turmushdagi holatingiz
+    "question_R0MOYK": "reg_phone",  # Telefon raqamingiz
+    "question_oyeJdb": "full_name",  # Ism va Familyangiz
+    "question_Gz9MDe": "gender",  # Jinsingiz
+    "question_Oz4RYa": "birthdate",  # Tug'ilgan sanangiz
+    "question_V0QrYj": "marital_status",  # Turmushdagi holatingiz
     "question_P61oY1": "number_of_children",  # Nechta Farzandingiz bor?
-    "question_EXdpDl": "native_town",         # Tug'ilgan shahringiz/viloyatingiz
-    "question_r6aXLo": "hometown",            # Hozirgi yashash manzilingiz
-    "question_48JZvr": "languages",           # Qaysi tillarni bilasiz
-    "question_jy6KWQ": "height",              # Bo'yingiz (sm)
-    "question_2ea2ve": "weight",              # Vazningiz (kg)
-    "question_xpMGyd": "biography",           # O'zingiz haqingizda gapirib bering
-    "question_Oz4R9p": "photo_upload",        # Rasm yuklang (not in User model directly)
-    "question_ZNExYV": "degree",              # Ma'lumotingiz
-    "question_N6lzY0": "field_of_study",      # O'qishdagi yo'nalishingiz
-    "question_qdDyWO": "occupation",          # Hozirgi kasbingiz
-    "question_QDeGYY": "occupation_detail",   # Ish joyingiz (merged with occupation)
-    "question_9W9evE": "religious_level",     # E'tiqod darajangizni belgilang
-    "question_e6Qb2x": "habits",              # Zararli odatlar (MATRIX: drinks & smokes)
+    "question_EXdpDl": "native_town",  # Tug'ilgan shahringiz/viloyatingiz
+    "question_r6aXLo": "hometown",  # Hozirgi yashash manzilingiz
+    "question_48JZvr": "languages",  # Qaysi tillarni bilasiz
+    "question_jy6KWQ": "height",  # Bo'yingiz (sm)
+    "question_2ea2ve": "weight",  # Vazningiz (kg)
+    "question_xpMGyd": "biography",  # O'zingiz haqingizda gapirib bering
+    "question_Oz4R9p": "photo_upload",  # Rasm yuklang (not in User model directly)
+    "question_ZNExYV": "degree",  # Ma'lumotingiz
+    "question_qdDyWO": "occupation",  # Hozirgi kasbingiz
+    "question_QDeGYY": "occupation_detail",  # Ish joyingiz (merged with occupation)
+    "question_9W9evE": "religious_level",  # E'tiqod darajangizni belgilang
+    "question_e6Qb2x": "habits",  # Zararli odatlar (MATRIX: drinks & smokes)
     "question_K65XDg": "habits_preferences",  # Zararli odatlar preferences (MATRIX: drinks_preference & smokes_preference)
-    "question_Lb78Yy": "contact_person",      # Sizga qiziqish bildiradigan nomzod kim bilan bog'lanishi kerak?
-    "question_MbN0Yl": "contact_phone",       # Nomzodlar bog'lanishi uchun raqamingiz
-    "question_J6pyDr": "telegram_username",   # Telegram akkauntingiz (nickname)
-    "question_g0dBZP": "contact_comment",     # Bog'lanmoqchi bo'lganlar uchun xabar qoldiring
+    "question_Lb78Yy": "contact_person",  # Sizga qiziqish bildiradigan nomzod kim bilan bog'lanishi kerak?
+    "question_MbN0Yl": "contact_phone",  # Nomzodlar bog'lanishi uchun raqamingiz
+    "question_J6pyDr": "telegram_username",  # Telegram akkauntingiz (nickname)
+    "question_g0dBZP": "contact_comment",  # Bog'lanmoqchi bo'lganlar uchun xabar qoldiring
 }
 
 # Map Tally option IDs to database enum values for Gender
@@ -128,20 +127,6 @@ DEGREE_MAPPING = {
     "9265c201-104e-4e1f-935f-f6164f99565a": 2,  # Magistratura (preferences)
     "14f0dc5d-290b-4b81-b26e-d997fee27b1b": 3,  # Phd
     "13c11b9c-e0c3-405f-8415-d08294b45e71": 3,  # Phd (preferences)
-}
-
-# Map Tally field of study option IDs to field names
-FIELD_OF_STUDY_MAPPING = {
-    "967cf3e0-1b95-4265-b10d-c1d7ecc839e6": "Informatsion Texnologiyalar",
-    "cf6d45aa-804c-4264-aff4-537e62312743": "Media va Jurnalistika",
-    "847f32e0-10df-4e80-87ae-c00bf26a30a0": "Transport va Logistika",
-    "a650df31-6ddd-4cbb-82b5-3357e14ee4ac": "Aloqa va Kommunikatsiya",
-    "a563b670-7f34-4ef9-b712-da4ab792f17c": "Biznes va Menejment",
-    "2175756c-1f1a-44a1-b94f-b527ef629322": "Moliya va Buxgalteriya",
-    "85d623e2-a0d7-45e3-a0fc-9c5d62bb0ff1": "Boshqa gumanitar",
-    "8f413ca2-a49c-4ee9-9eae-38f469b6c1f0": "Huquq va Qonun",
-    "cef12dc4-f593-430b-a6f0-e4f1f4f7d948": "Psixologiya",
-    "4a5e50ed-9e42-495f-9b75-e6faa55e478d": "Tibbiyot",
 }
 
 # Map Tally occupation option IDs to occupation names

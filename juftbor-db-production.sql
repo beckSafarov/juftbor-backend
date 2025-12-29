@@ -27,8 +27,8 @@ CREATE TABLE "users" (
   "height" INT DEFAULT NULL,
   "weight" INT DEFAULT NULL,
   "biography" TEXT,
+  "nationality" TEXT DEFAULT NULL,
   "degree" SMALLINT DEFAULT NULL, -- 0-3 (0: no degree, 1: bachelor, 2: master, 3: doctorate)
-  "field_of_study" TEXT DEFAULT NULL,
   "occupation" TEXT DEFAULT NULL,
   "religious_level" SMALLINT DEFAULT NULL, -- 0-3 (0: not religious, 3: very religious)
   "drinks" CHAR(1) DEFAULT NULL, -- 'n': never, 's': socially, 'y': yes
