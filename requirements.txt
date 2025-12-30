@@ -4,6 +4,7 @@ gunicorn
 pydantic
 sqlalchemy
 asyncpg
+psycopg2-binary
 python-dotenv
 alembic
 greenlet
